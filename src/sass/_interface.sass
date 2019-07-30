@@ -5,16 +5,18 @@ img
 .container
   width: 1170px
   margin: auto
-  border: 1px red solid
 @media (max-width: 1200px)
   .container
     max-width: 960px
     width: 95%
 @media (max-width: 768px)
   .container
+    max-width: 570px
     width: 95%
+@media (max-width: 320px)
+  .container
+    width: 100%
 .button
   border-radius: 10px
   border: none
   background-color: $main-color
-  
