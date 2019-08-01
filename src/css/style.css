@@ -193,6 +193,11 @@ img {
   max-width: 300px;
 }
 
+.hero-image img {
+  -webkit-box-shadow: 7px 5px 10px rgba(0, 0, 0, 0.05), 16px 22px 35px rgba(0, 0, 0, 0.05);
+          box-shadow: 7px 5px 10px rgba(0, 0, 0, 0.05), 16px 22px 35px rgba(0, 0, 0, 0.05);
+}
+
 @media (max-width: 1200px) {
   .hero-block {
     -webkit-box-orient: vertical;
