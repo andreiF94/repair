@@ -366,6 +366,10 @@ img {
   margin-right: 10px;
 }
 
+.offer__input:focus {
+  border: 1px solid orange;
+}
+
 .offer__button {
   width: 100%;
   height: 70px;
