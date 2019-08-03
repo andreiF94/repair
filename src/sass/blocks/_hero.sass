@@ -1,11 +1,12 @@
 .hero
-  background-color: $hero-bgc-color
+  background-color: $secondary
   padding: 50px 0
   &-block
     display: flex
+    justify-content: space-between
   &-text
     flex-basis: 47%
-    padding-right: 70px
+    padding-right: 80px
     &__title
       font-size: 41px
       line-height: 55px
@@ -22,7 +23,9 @@
     &__item
       display: flex
       align-items: center
-      margin-bottom: 25px
+      margin-bottom: 23px
+      &:last-child
+        margin-bottom: 0
     &__image
       width: 40px
       height: 40px
@@ -72,6 +75,8 @@
       &__title
         line-height: 1.2
         margin-bottom: 10px
+      &__subtitle
+        width: 200px
     &-block
       margin-left: 10px
       margin-right: 10px

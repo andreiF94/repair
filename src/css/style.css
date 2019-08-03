@@ -15,9 +15,14 @@
   font-style: normal;
 }
 
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
 body {
   font-family: 'Museo Sans Light', sans-serif;
-  font-weight: 300;
+  font-weight: 400;
   color: #333333;
 }
 
@@ -57,9 +62,21 @@ img {
   color: #333333;
 }
 
+.button:hover {
+  background-color: #ffe466;
+  cursor: pointer;
+}
+
+.input {
+  border: 1px solid #dddddd;
+  padding: 20px 25px;
+  font-size: 15px;
+  border-radius: 10px;
+}
+
 /* Импорт стилей шапки */
 .navbar {
-  padding: 8px 0;
+  padding: 7px 0;
 }
 
 .navbar-block {
@@ -102,7 +119,7 @@ img {
   margin-left: 30px;
   font-size: 13px;
   font-family: 'Museo Sans Bold', sans-serif;
-  font-weight: 700;
+  font-weight: 400;
 }
 
 .navbar__phone {
@@ -110,7 +127,7 @@ img {
   color: #333333;
   font-size: 20px;
   font-family: 'Museo Sans Bold', sans-serif;
-  font-weight: 700;
+  font-weight: 400;
   text-decoration: none;
   margin-top: 7px;
 }
@@ -160,12 +177,15 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .hero-text {
   -ms-flex-preferred-size: 47%;
       flex-basis: 47%;
-  padding-right: 70px;
+  padding-right: 80px;
 }
 
 .hero-text__title {
@@ -173,7 +193,7 @@ img {
   line-height: 55px;
   margin-bottom: 37px;
   font-family: 'Museo Sans Bold', sans-serif;
-  font-weight: 700;
+  font-weight: 400;
 }
 
 .hero-text__subtitle {
@@ -181,7 +201,7 @@ img {
   font-size: 20px;
   margin-bottom: 70px;
   font-family: 'Museo Sans Bold', sans-serif;
-  font-weight: 700;
+  font-weight: 400;
 }
 
 .hero-list {
@@ -196,7 +216,11 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-bottom: 25px;
+  margin-bottom: 23px;
+}
+
+.hero-list__item:last-child {
+  margin-bottom: 0;
 }
 
 .hero-list__image {
@@ -272,6 +296,9 @@ img {
     line-height: 1.2;
     margin-bottom: 10px;
   }
+  .hero-text__subtitle {
+    width: 200px;
+  }
   .hero-block {
     margin-left: 10px;
     margin-right: 10px;
@@ -285,5 +312,141 @@ img {
   }
   .hero-image {
     width: 270px;
+  }
+}
+
+/* Стили для блока offer */
+.offer {
+  background: url("../../img/offer/offer-bg.png") no-repeat;
+  padding: 50px 0;
+  background-position: center right;
+  background-size: contain;
+  position: relative;
+}
+
+.offer:before {
+  content: '';
+  width: 50%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+  position: absolute;
+}
+
+.offer-block {
+  width: 50%;
+  padding-right: 90px;
+  position: relative;
+}
+
+.offer__title {
+  font-size: 24px;
+  line-height: 35px;
+  max-width: 350px;
+  font-family: 'Museo Sans Bold', sans-serif;
+  font-weight: 400;
+  margin-bottom: 22px;
+}
+
+.offer__subtitle {
+  display: block;
+  font-size: 16px;
+  max-width: 240px;
+  margin-bottom: 30px;
+}
+
+.offer__input {
+  margin-bottom: 30px;
+  width: 240px;
+  height: 65px;
+}
+
+.offer__input:first-child {
+  margin-right: 10px;
+}
+
+.offer__button {
+  width: 100%;
+  height: 70px;
+  font-size: 16px;
+  margin-bottom: 10px;
+  font-family: 'Museo Sans Bold', sans-serif;
+  font-weight: 400;
+}
+
+.offer__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.offer__info p {
+  font-size: 15px;
+  line-height: 24px;
+}
+
+.offer__info p:first-child {
+  width: 225px;
+  margin-right: 65px;
+}
+
+.offer__info p a {
+  text-decoration: none;
+  color: #333333;
+  font-size: 15px;
+  display: block;
+  font-family: 'Museo Sans Bold', sans-serif;
+  font-weight: 400;
+}
+
+@media (max-width: 1200px) {
+  .offer {
+    background-size: cover;
+  }
+  .offer__input {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  .offer {
+    background: #fff;
+  }
+  .offer-block {
+    width: 100%;
+    padding-right: 0;
+  }
+}
+
+@media (max-width: 320px) {
+  .offer {
+    padding-top: 30px;
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+  .offer__title {
+    font-size: 18px;
+    line-height: 1.2;
+  }
+  .offer__subtitle {
+    font-size: 14px;
+  }
+  .offer__button {
+    font-size: 14px;
+    padding-left: 35px;
+    padding-right: 35px;
+    margin-bottom: 20px;
+  }
+  .offer__info {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .offer__info p {
+    margin-bottom: 0;
+    margin-top: 5px;
   }
 }
