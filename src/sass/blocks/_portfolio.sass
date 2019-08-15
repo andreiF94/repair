@@ -1,5 +1,5 @@
 .portfolio
-  padding-top: 100px
+  padding: 100px 0
   background: $secondary url("../img/portfolio/portfolio-pattern.jpg") repeat-y center left
   background-size: 50%
   &__title
@@ -17,3 +17,10 @@
 .slider
   &__image
     margin: auto
+@media (max-width: 320px)
+  .portfolio
+    padding: 50px 0
+    &__title
+      font-size: 18px
+      line-height: 1.2
+      margin-bottom: 40px

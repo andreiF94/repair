@@ -7,14 +7,14 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/slick.css">
+  <link rel="stylesheet" href="css/animate.css">
   <link rel="stylesheet" href="css/style.css">
   <title>Document</title>
 </head>
 
 <body>
 
-
-  <nav class="navbar " id="up">
+  <nav class="navbar" id="up">
     <div class="container">
       <div class="navbar-block">
         <div class="navbar__logo">
@@ -28,7 +28,7 @@
               " class="navbar__phone">+7 (495) 42-251-31</a>
           </div>
           <!-- /.navbar__contacts -->
-          <button class="button navbar__button" id="btn">Перезвоните мне</button> <!-- /.button navbar__button -->
+          <button class="button navbar__button wow flash infinite slow" id="btn">Перезвоните мне</button> <!-- /.button navbar__button -->
         </div>
         <!-- /.navbar__info -->
       </div>
@@ -45,11 +45,11 @@
       <div class="container">
         <div class="hero-block">
           <div class="hero-text">
-            <h1 class="hero-text__title">Внутренняя отделка помещений "под ключ"
+            <h1 class="hero-text__title wow bounceInLeft">Внутренняя отделка помещений "под ключ"
             </h1>
-            <span class="hero-text__subtitle">с гарантией качества, прописанной в договоре
+            <span class="hero-text__subtitle wow bounceInLeft" data-wow-delay="0.2s">с гарантией качества, прописанной в договоре
             </span>
-            <ul class="hero-list">
+            <ul class="hero-list wow bounceInLeft" data-wow-delay="0.5s">
               <li class="hero-list__item">
                 <div class="hero-list__image">
                   <img src="img/hero/clock.png" alt="clock">
@@ -71,7 +71,7 @@
             </ul>
           </div>
           <!-- /.hero-text -->
-          <div class="hero-image">
+          <div class="hero-image wow bounceInRight">
             <img src="img/hero/hero-image.png" alt="План квартиры">
           </div>
           <!-- /.hero-image -->
@@ -81,8 +81,6 @@
       <!-- /.container -->
     </section>
     <!-- /.hero -->
-
-
 
     <section class="offer">
       <div class="container">
@@ -107,11 +105,9 @@
     </section>
     <!-- /.offer -->
 
-
-
     <section class="section portfolio">
       <div class="container">
-        <h2 class="section-title portfolio__title">Работая с 2007 года,<br>мы сделали более 500 ремонтов в квартирах и домах</h2>
+        <h2 class="section-title portfolio__title wow zoomIn">Работая с 2007 года,<br>мы сделали более 500 ремонтов в квартирах и домах</h2>
         <div class="slider">
           <div class="slider__item"><img class="slider__image" src="img/portfolio/slider-1.jpg" alt="Slider"></div>
           <!-- /.slider__item -->
@@ -135,6 +131,91 @@
       <!-- /.container -->
     </section>
     <!-- /.section portfolio -->
+
+    <section class="section price">
+      <div class="container">
+        <h2 class="section-title price__title wow zoomIn">У нас очень гибкая система скидок на комплексные работы!</h2>
+        <!-- /.section-title price__title -->
+        <span class="section-subtitle price__subtitle">Прайс на наши услуги</span>
+        <!-- /.section-subtitle price__subtitle -->
+        <div class="cards">
+          <div class="card price__card wow fadeInUp">
+            <div class="card__image"><img src="img/price/bathroom.png" alt=""></div>
+            <div class="card__text">
+              <h4 class="card__title">Ремонт ванных комнат и с/у</h4>
+              <a href="#" class="card__link">Узнать цены</a>
+            </div>
+          </div>
+          <div class="card price__card wow fadeInUp" data-wow-delay="0.1s">
+            <div class="card__image"><img src="img/price/living.png" alt=""></div>
+            <div class="card__text">
+              <h4 class="card__title">Ремонт комнат и квартир</h4>
+              <a href="#" class="card__link">Узнать цены</a>
+            </div>
+          </div>
+          <div class="card price__card wow fadeInUp" data-wow-delay="0.2s">
+            <div class="card__image"><img src="img/price/office.png" alt=""></div>
+            <div class="card__text">
+              <h4 class="card__title">Отделка офисных помещений</h4>
+              <a href="#" class="card__link">Узнать цены</a>
+            </div>
+          </div>
+          <div class="card price__card wow fadeInUp" data-wow-delay="0.1s">
+            <div class="card__image"><img src="img/price/buildings.png" alt=""></div>
+            <div class="card__text">
+              <h4 class="card__title">Ремонт в новостройках</h4>
+              <a href="#" class="card__link">Узнать цены</a>
+            </div>
+          </div>
+          <div class="card price__card wow fadeInUp" data-wow-delay="0.2s">
+            <div class="card__image"><img src="img/price/kitchen.png" alt=""></div>
+            <div class="card__text">
+              <h4 class="card__title">Ремонт кухонь</h4>
+              <a href="#" class="card__link">Узнать цены</a>
+            </div>
+          </div>
+          <div class="card price__card wow fadeInUp" data-wow-delay="0.3s">
+            <div class="card__image"><img src="img/price/houses.png" alt=""></div>
+            <div class="card__text">
+              <h4 class="card__title">Ремонт дач и коттеджей</h4>
+              <a href="#" class="card__link">Узнать цены</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- /.container -->
+    </section>
+    <!-- /.section price -->
+
+    <section class="section steps">
+      <div class="container">
+        <h2 class="section-title steps__title wow zoomIn">Наши специалисты готовы выехать на замер в любое удобное для Вас время</h2>
+        <span class="section-subtitle steps__subtitle">5 шагов до ремонта</span>
+        <div class="steps-block">
+          <div class="step">
+            <div class="step__image"><img src="img/steps/woman-with-headset.png" alt=""></div>
+            <p class="step__text">Вы звоните нам или оставляете заявку</p>
+          </div>
+          <div class="step">
+            <div class="step__image"><img src="img/steps/wall-clock.png" alt=""></div>
+            <p class="step__text">Согласуем удобное для Вас время выезда специалиста на замер</p>
+          </div>
+          <div class="step">
+            <div class="step__image"><img src="img/steps/money.png" alt=""></div>
+            <p class="step__text">Рассчитываем смету согласовываем с Вами</p>
+          </div>
+          <div class="step">
+            <div class="step__image"><img src="img/steps/folded-document-icon.png" alt=""></div>
+            <p class="step__text">Подписываем договор закупаем материал по оптовым ценам </p>
+          </div>
+          <div class="step">
+            <div class="step__image"><img src="img/steps/calendar.png" alt=""></div>
+            <p class="step__text">Выполняем ремонт в указанные сроки</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
   </main>
 
   <div class="modal" id="modal">
@@ -148,13 +229,15 @@
       <button class="button navbar__button" id="upscroll">Наверх</button>
   </div>
 
+
   <!-- <script src="js/main.js"></script> -->
   <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
   <script src="js/modal.js"></script>
   <script src="js/scripts.js"></script>
   <script src="js/slick.min.js"></script>
-
+  <script src="js/wow.min.js"></script>
   <script>
+    new WOW().init();
     $(document).ready(function() {
       $('.slider').slick({
         slidesToShow: 3,
