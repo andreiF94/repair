@@ -3,12 +3,6 @@ var cleanCSS = require('gulp-clean-css');
 var htmlmin = require('gulp-htmlmin');
 var tinypng = require('gulp-tinypng-compress');
 
-gulp.task('default', defaultTask);
-
-function defaultTask(done) {
-  done();
-}
-
 gulp.task('minify-css', function(done) {
   gulp.src('./src/css/*.css')
   .pipe(cleanCSS({compatibility: 'ie8'}))
@@ -46,3 +40,7 @@ gulp.task('tinypng', function(done) {
 
   done();
 });
+
+gulp.task('default', gulp.series('minify-css', 'move-js', 'fonts', 'htmlmin', 'tinypng', function (done) {
+  done();
+}));
