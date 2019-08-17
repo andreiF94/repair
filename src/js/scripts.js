@@ -1,5 +1,6 @@
 $(document).ready(function(){
   $('#offer-form').on('submit', function(event) {
+    if ($(this).valid()) {
     event.preventDefault();
     $.ajax({
       url: 'mail.php',
@@ -12,5 +13,6 @@ $(document).ready(function(){
         console.log(jqXHR + ': ' + textStatus);
       }
     });
+  }
   });
 });
