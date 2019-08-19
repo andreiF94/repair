@@ -1,18 +1,1 @@
-$(document).ready(function(){
-  $('#offer-form').on('submit', function(event) {
-    if ($(this).valid()) {
-    event.preventDefault();
-    $.ajax({
-      url: 'mail.php',
-      type: 'POST',
-      data: $(this).serialize(),
-      success: function(data) {
-        $('.success').html(data + ', Ваша форма отправлена');
-      },
-      error: function(jqXHR, textStatus) {
-        console.log(jqXHR + ': ' + textStatus);
-      }
-    });
-  }
-  });
-});
+(new WOW).init(),$(document).ready(function(){$("#offer-form").on("submit",function(e){$(this).valid()&&(e.preventDefault(),$.ajax({url:"mail.php",type:"POST",data:$(this).serialize(),success:function(e){$(".success").html(e+", Ваша форма отправлена")},error:function(e,r){console.log(e+": "+r)}}))}),$("#brif-form").validate({rules:{username:{required:!0,minlength:2,maxlength:15},phone:{required:!0},email:{required:!0,email:!0}},messages:{username:{required:"Заполните поле",minlength:"Имя от 2 до 15 символов!",maxlength:"Имя от 2 до 15 символов!"},email:{required:"Заполните поле",email:"Введите корректный email"},phone:{required:"Заполните поле"}}}),$("#offer-form").validate({rules:{username:{required:!0,minlength:2,maxlength:15},userphone:{required:!0}},messages:{username:{required:"Заполните поле",minlength:"Имя от 2 до 15 символов!",maxlength:"Имя от 2 до 15 символов!"},userphone:{required:"Заполните поле"}}}),$(".phone").mask("8 (999) 999-99-99"),$(".phone").mask("8 (999) 999-99-99"),$(".slider").slick({slidesToShow:3,slidesToScroll:1,prevArrow:$(".arrows__left"),nextArrow:$(".arrows__right"),responsive:[{breakpoint:768,settings:{slidesToShow:1,slidesToScroll:1}},{breakpoint:1200,settings:{slidesToShow:2,slidesToScroll:1}}]})});

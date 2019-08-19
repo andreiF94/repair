@@ -399,7 +399,7 @@ img {
 
 @media (max-width: 320px) {
   .container {
-    max-width: 271px;
+    max-width: 277px;
   }
 }
 
@@ -431,6 +431,11 @@ img {
 
 .arrows__left:hover, .arrows__right:hover {
   cursor: pointer;
+}
+
+iframe {
+  height: 640px;
+  width: 100%;
 }
 
 /* Анимации */
@@ -946,7 +951,7 @@ img {
     border-radius: 5px;
   }
   .navbar__logo {
-    margin-left: 10px;
+    margin-left: 0;
   }
   .navbar__logo img {
     min-width: 91px;
@@ -1087,7 +1092,7 @@ img {
   }
   .hero-block {
     margin-left: 10px;
-    margin-right: 10px;
+    margin-right: 0;
   }
   .hero-list {
     margin-bottom: 35px;
@@ -1101,10 +1106,20 @@ img {
   }
 }
 
+@media (max-width: 320px) {
+  .hero-block {
+    margin-left: 0;
+  }
+  .hero-text__subtitle {
+    margin-left: 5px;
+  }
+}
+
 /* Стили для блока offer */
 .offer {
   background: url("../img/offer/offer-bg.png") no-repeat;
   padding: 50px 0;
+  padding-bottom: 65px;
   background-position: center right;
   background-size: contain;
   position: relative;
@@ -1184,10 +1199,13 @@ img {
 .offer__info p a {
   text-decoration: none;
   color: #333333;
-  font-size: 15px;
   display: block;
   font-family: 'Museo Sans Bold', sans-serif;
   font-weight: 400;
+}
+
+.offer__phone {
+  font-size: 15px;
 }
 
 @media (max-width: 1200px) {
@@ -1197,6 +1215,9 @@ img {
   .offer__input {
     width: 100%;
     margin-bottom: 10px;
+  }
+  .offer__info p:first-child {
+    margin-right: 25px;
   }
 }
 
@@ -1215,10 +1236,14 @@ img {
     padding-top: 30px;
     margin-left: 15px;
     margin-right: 15px;
+    padding-bottom: 50px;
   }
   .offer__title {
     font-size: 18px;
     line-height: 1.2;
+    max-width: 270px;
+    margin-top: 17px;
+    margin-bottom: 20px;
   }
   .offer__subtitle {
     font-size: 14px;
@@ -1227,7 +1252,7 @@ img {
     font-size: 14px;
     padding-left: 35px;
     padding-right: 35px;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
   }
   .offer__info {
     -webkit-box-orient: vertical;
@@ -1238,12 +1263,14 @@ img {
   .offer__info p {
     margin-bottom: 0;
     margin-top: 5px;
+    margin-left: 5px;
   }
 }
 
 /* Стили для блока портфолио */
 .portfolio {
   padding: 100px 0;
+  padding-top: 90px;
   background: #f5f5f5 url("../img/portfolio/portfolio-pattern.jpg") repeat-y center left;
   background-size: 50%;
 }
@@ -1251,7 +1278,7 @@ img {
 .portfolio__title {
   max-width: 800px;
   margin: auto;
-  margin-bottom: 100px;
+  margin-bottom: 90px;
   font-size: 30px;
   line-height: 45px;
 }
@@ -1272,14 +1299,33 @@ img {
   margin: auto;
 }
 
+.slider__item {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+@media (max-width: 1200px) {
+  .portfolio__title {
+    font-size: 24px;
+    line-height: 1.2;
+  }
+}
+
 @media (max-width: 320px) {
   .portfolio {
-    padding: 50px 0;
+    padding: 40px 0;
+    padding-bottom: 60px;
   }
   .portfolio__title {
     font-size: 18px;
     line-height: 1.2;
     margin-bottom: 40px;
+  }
+  .portfolio__arrows {
+    margin-top: 45px;
+  }
+  .slider__item img {
+    width: 246px;
   }
 }
 
@@ -1393,6 +1439,13 @@ img {
   height: 13px;
 }
 
+@media (max-width: 1200px) {
+  .price__title {
+    font-size: 24px;
+    line-height: 1.2;
+  }
+}
+
 @media (max-width: 768px) {
   .card {
     margin: auto;
@@ -1403,6 +1456,7 @@ img {
 @media (max-width: 320px) {
   .price {
     padding: 50px 0;
+    padding-bottom: 40px;
   }
   .price__title {
     font-size: 18px;
@@ -1414,12 +1468,14 @@ img {
     font-size: 14px;
   }
   .card__text {
+    padding-top: 30px;
     padding-left: 20px;
     padding-right: 20px;
   }
   .card__title {
     font-size: 14px;
     max-width: 300px;
+    margin-bottom: 10px;
   }
 }
 
@@ -1507,6 +1563,10 @@ img {
         -ms-flex-pack: center;
             justify-content: center;
   }
+  .steps__title {
+    font-size: 24px;
+    line-height: 1.2;
+  }
 }
 
 @media (max-width: 768px) {
@@ -1530,6 +1590,7 @@ img {
 @media (max-width: 320px) {
   .step {
     padding-bottom: 20px;
+    margin-bottom: 12px;
   }
   .step__text {
     font-size: 12px;
@@ -1548,7 +1609,7 @@ img {
 /* Стили для блока brif */
 .brif {
   padding-top: 100px;
-  padding-bottom: 100px;
+  padding-bottom: 15px;
   background-image: url("../img/brif/brif-color-bg.jpg"), url("../img/brif/brif-bg.jpg");
   background-position: left center, center right;
   background-size: 50%, contain;
@@ -1569,7 +1630,7 @@ img {
 .brif__form {
   -ms-flex-preferred-size: 50%;
       flex-basis: 50%;
-  padding-left: 200px;
+  padding-left: 210px;
   text-align: center;
 }
 
@@ -1590,14 +1651,15 @@ img {
 }
 
 .interview {
-  padding-right: 70px;
+  padding-right: 60px;
 }
 
 .interview__title {
+  margin-top: 0;
   font-size: 22px;
   font-family: 'Museo Sans Bold', sans-serif;
   font-weight: 400;
-  margin-bottom: 50px;
+  margin-bottom: 40px;
   line-height: 33px;
 }
 
@@ -1621,7 +1683,7 @@ img {
           align-items: center;
   font-family: 'Museo Sans Bold', sans-serif;
   font-weight: 400;
-  margin-bottom: 25px;
+  margin-bottom: 30px;
 }
 
 .interview-list__counter {
@@ -1642,6 +1704,7 @@ img {
 }
 
 .form__title {
+  margin-top: 0;
   margin-bottom: 50px;
   font-size: 22px;
   font-family: 'Museo Sans Bold', sans-serif;
@@ -1690,11 +1753,17 @@ img {
   }
 }
 
+@media (max-width: 1200px) {
+  .interview-list__text {
+    max-width: 250px;
+  }
+}
+
 @media (max-width: 768px) {
   .brif {
     padding-top: 60px;
     padding-bottom: 60px;
-    background-image: url("../img/brif/brif-color-bg.png"), url("../img/brif/brif-bg.jpg");
+    background-image: url("../img/brif/brif-color-bg.jpg"), url("../img/brif/brif-bg.jpg");
     background-position: top center, center bottom;
     background-size: 100% 50%, cover;
     background-repeat: repeat-x, no-repeat;
@@ -1708,11 +1777,15 @@ img {
   .brif__form {
     margin-top: 80px;
   }
+  .interview-list__text {
+    max-width: 200px;
+  }
 }
 
 @media (max-width: 320px) {
   .brif {
     padding-top: 30px;
+    padding-bottom: 30px;
   }
   .brif__form {
     padding-left: 0;
@@ -1720,24 +1793,33 @@ img {
   .brif__button {
     margin-top: 0;
   }
+  .brif__interview {
+    padding-right: 0;
+  }
   .interview__title {
     font-size: 18px;
     line-height: 1.2;
+    margin-top: 15px;
+    width: 217px;
   }
   .interview__subtitle {
     font-size: 14px;
     line-height: 1.2;
+    width: 173px;
+    margin-bottom: 35px;
   }
   .interview-list__text {
-    max-width: 190px;
+    max-width: 235px;
   }
   .interview-list__counter {
-    margin-right: 5px;
+    margin-right: 8px;
   }
   .form__title {
     font-size: 18px;
     max-width: 300px;
-    line-height: 1.2;
+    line-height: 1.4;
+    margin-top: 60px;
+    margin-bottom: 20px;
   }
   .form__subtitle {
     font-size: 14px;
@@ -1746,6 +1828,7 @@ img {
     font-size: 14px;
     max-width: 140px;
     margin: auto;
+    line-height: 24px;
   }
 }
 
@@ -1764,13 +1847,14 @@ img {
 .contacts {
   -ms-flex-preferred-size: 50%;
       flex-basis: 50%;
-  padding-top: 100px;
-  padding-left: 200px;
+  padding-top: 90px;
+  padding-left: 210px;
 }
 
 .contacts__title {
   font-family: 'Museo Sans Bold', sans-serif;
   font-weight: 400;
+  margin-top: 0;
   font-size: 22px;
   line-height: 1.4;
   margin-bottom: 100px;
@@ -1805,10 +1889,11 @@ img {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  margin-bottom: 39px;
+  margin-bottom: 35px;
 }
 
 .contacts-list__text {
+  margin-top: -5px;
   line-height: 26px;
 }
 
@@ -1857,9 +1942,22 @@ img {
 }
 
 @media (max-width: 320px) {
+  .contacts {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+  }
+  .contacts-block {
+    margin-left: 0;
+    padding-bottom: 20px;
+  }
   .contacts__title {
+    margin-top: 55px;
     margin-bottom: 40px;
     max-width: 260px;
+    line-height: 1.2;
+  }
+  .contacts-list {
+    margin-bottom: 30px;
   }
 }
 

@@ -1,6 +1,6 @@
 .brif
   padding-top: 100px
-  padding-bottom: 100px
+  padding-bottom: 15px
   background-image: url('../img/brif/brif-color-bg.jpg'), url('../img/brif/brif-bg.jpg')
   background-position: left center, center right
   background-size: 50%, contain
@@ -11,7 +11,7 @@
     flex-basis: 50%
   &__form
     flex-basis: 50%
-    padding-left: 200px
+    padding-left: 210px
     text-align: center
   &__input
     width: 100%
@@ -25,11 +25,12 @@
     margin-bottom: 30px
     +bold
 .interview
-  padding-right: 70px
+  padding-right: 60px
   &__title
+    margin-top: 0
     font-size: 22px
     +bold
-    margin-bottom: 50px
+    margin-bottom: 40px
     line-height: 33px
   &__subtitle
     font-size: 16px
@@ -42,7 +43,7 @@
       display: flex
       align-items: center
       +bold
-      margin-bottom: 25px
+      margin-bottom: 30px
     &__counter
       display: inline-block
       text-align: center
@@ -58,6 +59,7 @@
       font-size: 18px
 .form
   &__title
+    margin-top: 0
     margin-bottom: 50px
     font-size: 22px
     +bold
@@ -92,11 +94,16 @@
       margin-bottom: 15px
     &__subtitle
       margin-bottom: 30px
+@media (max-width: 1200px)
+  .interview
+    &-list
+      &__text
+        max-width: 250px
 @media (max-width: 768px)
   .brif
     padding-top: 60px
     padding-bottom: 60px
-    background-image: url('../img/brif/brif-color-bg.png'), url('../img/brif/brif-bg.jpg')
+    background-image: url('../img/brif/brif-color-bg.jpg'), url('../img/brif/brif-bg.jpg')
     background-position: top center, center bottom
     background-size: 100% 50%, cover
     background-repeat: repeat-x, no-repeat
@@ -104,33 +111,47 @@
       flex-direction: column
     &__form
       margin-top: 80px
+  .interview
+    &-list
+      &__text
+        max-width: 200px
 @media (max-width: 320px)
   .brif
     padding-top: 30px
+    padding-bottom: 30px
     &__form
       padding-left: 0
     &__button
       margin-top: 0
+    &__interview
+      padding-right: 0
   .interview
     &__title
       font-size: 18px
       line-height: 1.2
+      margin-top: 15px
+      width: 217px
     &__subtitle
       font-size: 14px
       line-height: 1.2
+      width: 173px
+      margin-bottom: 35px
     &-list
       &__text
-        max-width: 190px
+        max-width: 235px
       &__counter
-        margin-right: 5px
+        margin-right: 8px
   .form
     &__title
       font-size: 18px
       max-width: 300px
-      line-height: 1.2
+      line-height: 1.4
+      margin-top: 60px
+      margin-bottom: 20px
     &__subtitle
       font-size: 14px
     &__description
       font-size: 14px
       max-width: 140px
       margin: auto
+      line-height: 24px

@@ -1,11 +1,12 @@
 .portfolio
   padding: 100px 0
+  padding-top: 90px
   background: $secondary url("../img/portfolio/portfolio-pattern.jpg") repeat-y center left
   background-size: 50%
   &__title
     max-width: 800px
     margin: auto
-    margin-bottom: 100px
+    margin-bottom: 90px
     font-size: 30px
     line-height: 45px
   &__arrows
@@ -17,10 +18,25 @@
 .slider
   &__image
     margin: auto
+  &__item
+    padding-left: 15px
+    padding-right: 15px
+@media (max-width: 1200px)
+  .portfolio
+    &__title
+      font-size: 24px
+      line-height: 1.2
 @media (max-width: 320px)
   .portfolio
-    padding: 50px 0
+    padding: 40px 0
+    padding-bottom: 60px
     &__title
       font-size: 18px
       line-height: 1.2
       margin-bottom: 40px
+    &__arrows
+      margin-top: 45px
+  .slider
+    &__item
+      img
+        width: 246px
