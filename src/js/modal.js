@@ -2,6 +2,7 @@ $(document).ready(function() {
   var button = $('#btn');
   var modal = $('#modal');
   var close = $('#close');
+  var close2 = $('#close-2');
 
 
   button.on('click', function(){
@@ -9,6 +10,10 @@ $(document).ready(function() {
   });
   
   close.on('click', function(){
+    modal.removeClass('modal_active');
+  });
+
+  close2.on('click', function(){
     modal.removeClass('modal_active');
   });
 

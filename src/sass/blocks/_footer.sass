@@ -39,7 +39,10 @@
         +bold
       span
         +bold
-@media (max-width: 576px)
+@media (max-width: 1200px)
+  .contacts
+    padding-left: 60px
+@media (max-width: 768px)
   .footer
     position: static
     display: flex
@@ -51,10 +54,12 @@
     width: 100%
   .contacts
     padding: 0
+    flex-basis: 100%
     &-block
       justify-content: flex-start
       margin-left: 25px
     &__title
+      margin-top: 50px
       font-size: 18px
 @media (max-width: 320px)
   .contacts

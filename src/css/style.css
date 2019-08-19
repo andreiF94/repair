@@ -1171,6 +1171,14 @@ iframe {
   border: 1px solid orange;
 }
 
+.offer__form {
+  position: relative;
+}
+
+.offer__form label {
+  position: absolute;
+}
+
 .offer__button {
   width: 100%;
   height: 70px;
@@ -1444,6 +1452,16 @@ iframe {
     font-size: 24px;
     line-height: 1.2;
   }
+  .price__card {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+}
+
+@media (max-width: 868px) {
+  .card {
+    margin: 0 25% 0 25%;
+  }
 }
 
 @media (max-width: 768px) {
@@ -1554,6 +1572,7 @@ iframe {
     -ms-flex-preferred-size: 50%;
         flex-basis: 50%;
     margin-bottom: 30px;
+    padding-bottom: 40px;
   }
   .step:after {
     display: none;
@@ -1572,6 +1591,7 @@ iframe {
 @media (max-width: 768px) {
   .step {
     margin-bottom: 30px;
+    padding-bottom: 20px;
   }
   .step:after {
     display: none;
@@ -1725,7 +1745,7 @@ iframe {
 
 @media (max-width: 1200px) {
   .brif__form {
-    padding-left: 30px;
+    padding-left: 0;
   }
   .interview {
     padding-right: 30px;
@@ -1777,6 +1797,9 @@ iframe {
   .brif__form {
     margin-top: 80px;
   }
+  .interview {
+    padding-left: 20px;
+  }
   .interview-list__text {
     max-width: 200px;
   }
@@ -1795,6 +1818,7 @@ iframe {
   }
   .brif__interview {
     padding-right: 0;
+    padding-left: 0;
   }
   .interview__title {
     font-size: 18px;
@@ -1908,7 +1932,13 @@ iframe {
   font-weight: 400;
 }
 
-@media (max-width: 576px) {
+@media (max-width: 1200px) {
+  .contacts {
+    padding-left: 60px;
+  }
+}
+
+@media (max-width: 768px) {
   .footer {
     position: static;
     display: -webkit-box;
@@ -1929,6 +1959,8 @@ iframe {
   }
   .contacts {
     padding: 0;
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
   }
   .contacts-block {
     -webkit-box-pack: start;
@@ -1937,6 +1969,7 @@ iframe {
     margin-left: 25px;
   }
   .contacts__title {
+    margin-top: 50px;
     font-size: 18px;
   }
 }
@@ -1983,7 +2016,7 @@ iframe {
   max-width: 550px;
   width: 90%;
   min-width: 200px;
-  background-color: #fff;
+  background-color: #dddddd;
   padding: 40px;
   position: relative;
 }
@@ -1992,6 +2025,17 @@ iframe {
   position: absolute;
   top: 0;
   right: 0;
+  border: 1px solid red;
+}
+
+.modal-dialog__title {
+  font-size: 20px;
+  text-align: center;
+}
+
+#close-2 {
+  display: block;
+  margin: auto;
 }
 
 #upscroll {
